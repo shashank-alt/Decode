@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"1."<<endl;
+    int x;
+    cout<<"Enter first number: ";
+    cin>>x;
+    int y,m;
+    cout<<"Enter second number and the value for taking modulus: ";
+    cin>>y>>m;
+    int z = (x*y)%m;
+    cout<<"output is: "<<z<<endl;
+    cout<<"2."<<endl;
+    int a;
+    cout<<"Enter first number: ";
+    cin>>a;
+    int b;
+    cout<<"Enter second number: ";
+    cin>>b;
+    cout<<(a!=b)<<" "<<(a>=b)<<endl;
+    cout<<"3."<<endl;
+    int c,d;
+    cout<<"Enter two numbers: ";
+    cin>>c>>d;
+    c+=d;
+    c-=d;
+    c%=d;
+    cout<<c<<endl;
+    cout<<"4."<<endl;
+    float radius,height;
+    cout<<"Enter radius and height of the cylinder: ";
+    cin>>radius>>height;
+    float volume;
+    volume = 3.1415*radius*radius*height;
+    cout<<"Volume of the cylinder is: "<<volume<<endl;
+    cout<<"5."<<endl;
+    char ch1,ch2;
+    cout<<"Enter two characters: ";
+    cin>>ch1>>ch2;
+    int ascii_diff = abs(ch1-ch2);
+    cout<<"ASCII difference between "<<ch1<<" and "<<ch2<<" is: "<<ascii_diff<<endl;
+    cout<<"6."<<endl;
+    int i = ( 4 + 7 / 5 * 6 * 6+9 )% 100 ;
+    cout<<i;
+    return 0;
+}
